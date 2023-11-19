@@ -65,14 +65,14 @@ def objective(trial):
 ```
 
 ## Result
-*튜닝 결과    
+* 튜닝 결과    
 ![스크린샷 2023-11-19 231651](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/07dbc0f2-6ba4-40d2-b5d4-013c65f254b9)
 
 
-*튜닝 기록    
+* 튜닝 기록    
 ![newplot](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/2a7dd620-de93-4963-ade4-4ea39900933a)    
-*파라미터 사이의 관계    
+* 파라미터 사이의 관계    
 ![newplot1](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/a5a9beee-2bb5-4cbc-99cc-5b1dd52a981c)    
-*파라미터 중요도    
+* 파라미터 중요도    
 ![newplot2](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/5be8a0e3-ab99-434f-b685-3b9bbc8080ab)
 
