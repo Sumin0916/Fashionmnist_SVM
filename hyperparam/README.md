@@ -1,9 +1,9 @@
-# 하이퍼파리미터 튜닝
+# 하이퍼파라미터 튜닝
 ## Optuna
 ## objective - Map 성능으로 PCA의 n_components, SVM의 gamma, C값을 튜닝
 `kernel`은 시간이 오래걸리는 관계로  지정해주었음 
-* `rbf`: `optuna_rbf.ippynb`에서 확인가능
-* `poly`: 실행한지 이틀되었으나 결과 아직 안나옴.. `trials` 줄여야할듯 현재는 `50`번
+* `poly`: `optuna_poly.ipynb`에서 확인가능
+* `rbf`: 실행한지 이틀되었으나 결과 아직 안나옴.. `trials` 줄여야할듯 현재는 `50`번
 ``
 
 ```
