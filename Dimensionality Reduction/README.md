@@ -9,7 +9,7 @@ HOG는 객체의 모양과 실루엣을 잘 잡아내는 데 특히 유용함
 
 
 ### apply_hog: hog를 적용함
-```
+```python
 from skimage.feature import hog
 def apply_hog(images):
     result = []
@@ -26,7 +26,7 @@ def apply_hog(images):
 * `block_norm`: 블록 정규화 방법.
 
 ## PCA
-```
+```python
 pca = PCA(n_components=250)
 pca.fit(X_train_hog)
 X_train_pca = pca.transform(X_train_hog)
@@ -45,7 +45,7 @@ Hog 적용 후 PCA 적용
 * `label`: 훈련 데이터와 테스트 데이터의 label중 무엇을 쓸것인지
 * 최종 mAP 계산결과만 출력함
 
-```
+```python
 from sklearn.metrics import auc
 from collections import Counter
 def calculate_mAP(preds,label):
