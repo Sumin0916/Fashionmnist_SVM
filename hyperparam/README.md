@@ -65,6 +65,10 @@ def objective(trial):
 ```
 
 ## Result
+*튜닝 결과    
+![스크린샷 2023-11-19 231651](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/07dbc0f2-6ba4-40d2-b5d4-013c65f254b9)
+
+
 *튜닝 기록    
 ![newplot](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/2a7dd620-de93-4963-ade4-4ea39900933a)    
 *파라미터 사이의 관계    
