@@ -8,7 +8,7 @@
 
 ``
 
-```
+```python
 def objective(trial):
     # suggest methods are used to set the range of hyperparameters
     n_components = trial.suggest_int('n_components', 181, 600)
