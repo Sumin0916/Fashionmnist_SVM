@@ -86,7 +86,5 @@ def calculate_mAP(preds,label):
 
 ## Result
 Hog를 쓴다면 과적합 문제를 해결해야할듯 함.
+![스크린샷 2023-11-19 220520](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/7c926250-dd47-4001-b515-2f66bb5561c5)    
 ![스크린샷 2023-11-19 220549](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/aee7daa8-23b5-46cb-b8e1-8f5c42e9836a)
-
-
-![스크린샷 2023-11-19 220520](https://github.com/Sumin0916/Fashionmnist_SVM/assets/95135403/7c926250-dd47-4001-b515-2f66bb5561c5)
