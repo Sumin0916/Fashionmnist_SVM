@@ -37,10 +37,10 @@ lgbm_model = LGBMClassifier(
 * 그러나 LightGBM은 더 깊은 트리를 사용하기 때문에 과적합의 위험
 * 복잡한 데이터셋에 적합
 * 
-## CatBoost(덜 추천)
+## CatBoost
 
 Gradient Boosting 알고리즘에 기반한 이 방법. 특히 범주형 데이터(Categorical Data)를 다루는 데 뛰어난 성능을 보임   
-fahsionMNIST는 범주형 데이터가 아니라는 점 고려해야함
+fahsionMNIST는 범주형 데이터가 아니라는 점 고려해야함 (덜 추천)
 
 - **범주형 데이터 처리**: CatBoost는 범주형 변수를 자동으로 처리하므로, 별도의 데이터 전처리 없이 범주형 변수를 사용가능
 - **우수한 성능**: Gradient Boosting 알고리즘에 기반, CatBoost는 다른 머신러닝 알고리즘에 비해 뛰어난 성능
