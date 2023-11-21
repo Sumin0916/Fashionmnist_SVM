@@ -1,7 +1,7 @@
 # Ensemble에 쓸만한 모델 모음
 # Table of Contents
-1. [LightGBM](#LightGBM)
-2. [CatBoost](#CatBoost)
+1. [LightGBM](##LightGBM)
+2. [CatBoost](##CatBoost)
 ## LightGBM 
 
  LightGBM은 Gradient Boosting 프레임워크를 기반으로 하는 머신 러닝 알고리즘
