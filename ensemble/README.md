@@ -33,3 +33,22 @@ lgbm_model = LGBMClassifier(
 * LightGBM은 학습 속도와 메모리 효율성 면에서 우수한 성능을 보여줌
 * 그러나 LightGBM은 더 깊은 트리를 사용하기 때문에 과적합의 위험
 * 복잡한 데이터셋에 적합
+* 
+## CatBoost(덜 추천)
+
+Gradient Boosting 알고리즘에 기반한 이 방법. 특히 범주형 데이터(Categorical Data)를 다루는 데 뛰어난 성능을 보임   
+fahsionMNIST는 범주형 데이터가 아니라는 점 고려해야함
+
+- **범주형 데이터 처리**: CatBoost는 범주형 변수를 자동으로 처리하므로, 별도의 데이터 전처리 없이 범주형 변수를 사용가능
+- **우수한 성능**: Gradient Boosting 알고리즘에 기반, CatBoost는 다른 머신러닝 알고리즘에 비해 뛰어난 성능
+- **체크포인트 저장**: 학습 도중에 체크포인트를 저장, 학습이 중단되더라도 이어서 학습 가능
+
+```python
+catboost = CatBoostClassifier(iterations=1000, learning_rate=0.05, depth=6)
+```
+
+- `iterations`: 학습을 반복할 횟수. 이 값이 크면 더 많이 학습하지만, 과적합의 위험.
+- `learning_rate`: 학습률. 이 값이 너무 크면 학습이 불안정할 수 있고, 너무 작으면 학습이 느려짐.
+- `depth`: 트리의 깊이.이 값이 크면 더 복잡한 모델을 만들 수 있지만, 과적합의 위험.
+
+
