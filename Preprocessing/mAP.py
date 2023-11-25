@@ -2,9 +2,18 @@ import sys
 import numpy as np
 from sklearn.metrics import auc
 from collections import Counter
-
-def mAP_result(testResult_path, label_path):
-
+"""
+결과를 저장할 텍스트 파일 이름, 예측 데이터를 입력으로 받고 출력
+testResult_path = f'../mAP/{testResult_name}.txt'
+label_path='../mAP/label.txt'
+여기서 폴더 경로만 수정하면 됨
+"""
+def mAP_result(testResult_name, predict_data,label_path='../mAP/label.txt'):
+    testResult_path = f'../mAP/{testResult_name}.txt'
+    with open(testResult_path, 'w') as file:
+        for i in range(predict_data.shape[0]):
+            file.write(f"{i:05d} {int(predict_data[i])}\n")
+    
     # pred에 해당하는 testResult.txt 파일 읽어오는 부분입니다.
     with open(testResult_path, 'r') as file1:
         preds = file1.readlines()
