@@ -201,3 +201,44 @@ FN : 37
 | mAP           | 0.83          |
 Train Map score: 0.00990570912690084
 Test Map score: 0.832531872221902
+from skimage.feature import hog
+hog_params={
+    'orientations':6,
+    'pixels_per_cell':(4,4),
+    'cells_per_block':(3,3),
+    'block_norm':'L2' ,
+}
+pca = PCA(n_components=100)   TP : 882
+FN : 161
+TP : 981
+FN : 7
+TP : 851
+FN : 116
+TP : 932
+FN : 95
+TP : 880
+FN : 159
+TP : 960
+FN : 22
+TP : 721
+FN : 213
+TP : 947
+FN : 64
+TP : 987
+FN : 15
+TP : 964
+FN : 43
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.71          |
+| Trouser       | 0.99          |
+| Pullover      | 0.76          |
+| Dress         | 0.83          |
+| Coat          | 0.71          |
+| Sandal        | 0.95          |
+| Shirt         | 0.59          |
+| Sneaker       | 0.88          |
+| Bag           | 0.97          |
+| Ankle boot    | 0.91          |
+| mAP           | 0.83          |Train Map score: 0.009856423994648044
+Test Map score: 0.8291668876511272
