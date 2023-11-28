@@ -1,17 +1,11 @@
-from skimage.feature import hog
+pca = PCA(n_components=100)
 hog_params={
     'orientations':6,
     'pixels_per_cell':(3,3) ,
     'cells_per_block':(2,2),
     'block_norm':'L2' ,
 }
-def apply_hog(images):
-    result = []
-    for image in images:
-        hog_features = hog(image,**hog_params)
-        result.append(hog_features)
-    return result
-pca = PCA(n_components=100)
+
 TP : 895
 FN : 135
 TP : 990
@@ -49,33 +43,12 @@ FN : 39
 Train Map score: 0.009904537945272905
 Test Map score: 0.8423501316199884
 
-
-from skimage.feature import hog
 hog_params={
     'orientations':8,
     'pixels_per_cell':(4,4) ,
     'cells_per_block':(2,2),
     'block_norm':'L2' ,
 }
-def apply_hog(images):
-    result = []
-    for image in images:
-        hog_features = hog(image,**hog_params)
-        result.append(hog_features)
-    return result
-pca = PCA(n_components=100)
-]
-0초
-import sys
-import numpy as np
-from sklearn.metrics import auc
-from collections import Counter
-
-# testResult_path = sys.argv[1]
-# label_path = sys.argv[2]
-
-testResult_path = 'testResult_public_hog_n400_c8.txt'
-label_path = 'label.txt'
 
 output
 TP : 883
