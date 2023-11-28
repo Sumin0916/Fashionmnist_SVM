@@ -1,4 +1,5 @@
-pca = PCA(n_components=100)
+*pca = PCA(n_components=100) 고정*
+==================================
 hog_params={
     'orientations':6,
     'pixels_per_cell':(3,3) ,
@@ -43,6 +44,50 @@ FN : 39
 Train Map score: 0.009904537945272905
 Test Map score: 0.8423501316199884
 
+====================================
+hog_params={
+    'orientations':8,
+    'pixels_per_cell':(3,3),
+    'cells_per_block':(2,2),
+    'block_norm':'L2' ,
+}
+TP : 891
+FN : 152
+TP : 988
+FN : 13
+TP : 849
+FN : 116
+TP : 925
+FN : 74
+TP : 882
+FN : 143
+TP : 965
+FN : 23
+TP : 751
+FN : 218
+TP : 953
+FN : 60
+TP : 983
+FN : 14
+TP : 961
+FN : 39
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.72          |
+| Trouser       | 0.97          |
+| Pullover      | 0.78          |
+| Dress         | 0.85          |
+| Coat          | 0.74          |
+| Sandal        | 0.95          |
+| Shirt         | 0.60          |
+| Sneaker       | 0.88          |
+| Bag           | 0.97          |
+| Ankle boot    | 0.92          |
+| mAP           | 0.84          |
+
+Train Map score: 0.009936203255317895
+Test Map score: 0.8389519277736983
+====================================
 hog_params={
     'orientations':8,
     'pixels_per_cell':(4,4) ,
@@ -86,6 +131,8 @@ FN : 36
 | mAP           | 0.83          |
 Train Map score: 0.009902058211263885
 Test Map score: 0.8349900011523843
+
+====================================
 from skimage.feature import hog
 hog_params={
     'orientations':8,
@@ -130,7 +177,7 @@ FN : 34
 | mAP           | 0.83          |
 Train Map score: 0.009911100902988008 
 Test Map score: 0.832199890168663
-
+====================================
 from skimage.feature import hog
 hog_params={
     'orientations':6,
@@ -213,5 +260,6 @@ FN : 43
 | Sneaker       | 0.88          |
 | Bag           | 0.97          |
 | Ankle boot    | 0.91          |
-| mAP           | 0.83          |Train Map score: 0.009856423994648044
+| mAP           | 0.83          |
+Train Map score: 0.009856423994648044
 Test Map score: 0.8291668876511272
