@@ -1,4 +1,4 @@
-*pca = PCA(n_components=100) 고정*
+*pca = PCA(n_components=100) SVC(C=8)고정*
 ==================================
 hog_params={
     'orientations':6,
