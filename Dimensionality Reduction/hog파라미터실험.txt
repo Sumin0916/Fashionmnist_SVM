@@ -87,6 +87,7 @@ FN : 39
 
 Train Map score: 0.009936203255317895
 Test Map score: 0.8389519277736983
+
 ====================================
 hog_params={
     'orientations':8,
@@ -177,8 +178,9 @@ FN : 34
 | mAP           | 0.83          |
 Train Map score: 0.009911100902988008 
 Test Map score: 0.832199890168663
+
 ====================================
-from skimage.feature import hog
+
 hog_params={
     'orientations':6,
     'pixels_per_cell':(4,4) ,
@@ -221,7 +223,8 @@ FN : 37
 | mAP           | 0.83          |
 Train Map score: 0.00990570912690084
 Test Map score: 0.832531872221902
-from skimage.feature import hog
+
+====================================
 hog_params={
     'orientations':6,
     'pixels_per_cell':(4,4),
