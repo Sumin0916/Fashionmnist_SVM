@@ -1,0 +1,203 @@
+from skimage.feature import hog
+hog_params={
+    'orientations':6,
+    'pixels_per_cell':(3,3) ,
+    'cells_per_block':(2,2),
+    'block_norm':'L2' ,
+}
+def apply_hog(images):
+    result = []
+    for image in images:
+        hog_features = hog(image,**hog_params)
+        result.append(hog_features)
+    return result
+pca = PCA(n_components=100)
+TP : 895
+FN : 135
+TP : 990
+FN : 10
+TP : 859
+FN : 110
+TP : 927
+FN : 84
+TP : 880
+FN : 154
+TP : 968
+FN : 16
+TP : 744
+FN : 213
+TP : 958
+FN : 56
+TP : 984
+FN : 14
+TP : 964
+FN : 39
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.74          |
+| Trouser       | 0.98          |
+| Pullover      | 0.79          |
+| Dress         | 0.84          |
+| Coat          | 0.72          |
+| Sandal        | 0.97          |
+| Shirt         | 0.60          |
+| Sneaker       | 0.89          |
+| Bag           | 0.97          |
+| Ankle boot    | 0.92          |
+| mAP           | 0.84          |
+
+Train Map score: 0.009904537945272905
+Test Map score: 0.8423501316199884
+
+
+from skimage.feature import hog
+hog_params={
+    'orientations':8,
+    'pixels_per_cell':(4,4) ,
+    'cells_per_block':(2,2),
+    'block_norm':'L2' ,
+}
+def apply_hog(images):
+    result = []
+    for image in images:
+        hog_features = hog(image,**hog_params)
+        result.append(hog_features)
+    return result
+pca = PCA(n_components=100)
+]
+0초
+import sys
+import numpy as np
+from sklearn.metrics import auc
+from collections import Counter
+
+# testResult_path = sys.argv[1]
+# label_path = sys.argv[2]
+
+testResult_path = 'testResult_public_hog_n400_c8.txt'
+label_path = 'label.txt'
+
+output
+TP : 883
+FN : 145
+TP : 982
+FN : 13
+TP : 840
+FN : 121
+TP : 922
+FN : 98
+TP : 870
+FN : 146
+TP : 965
+FN : 23
+TP : 748
+FN : 231
+TP : 953
+FN : 62
+TP : 987
+FN : 15
+TP : 960
+FN : 36
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.73          |
+| Trouser       | 0.97          |
+| Pullover      | 0.76          |
+| Dress         | 0.82          |
+| Coat          | 0.73          |
+| Sandal        | 0.95          |
+| Shirt         | 0.60          |
+| Sneaker       | 0.88          |
+| Bag           | 0.97          |
+| Ankle boot    | 0.93          |
+| mAP           | 0.83          |
+Train Map score: 0.009902058211263885
+Test Map score: 0.8349900011523843
+from skimage.feature import hog
+hog_params={
+    'orientations':8,
+    'pixels_per_cell':(4,4),
+    'cells_per_block':(2,2),
+    'block_norm':'L2' ,
+}
+pca = PCA(n_components=100)
+TP : 878
+FN : 147
+TP : 983
+FN : 12
+TP : 837
+FN : 124
+TP : 920
+FN : 98
+TP : 875
+FN : 157
+TP : 961
+FN : 22
+TP : 740
+FN : 228
+TP : 957
+FN : 65
+TP : 987
+FN : 14
+TP : 961
+FN : 34
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.73          |
+| Trouser       | 0.98          |
+| Pullover      | 0.76          |
+| Dress         | 0.82          |
+| Coat          | 0.72          |
+| Sandal        | 0.95          |
+| Shirt         | 0.60          |
+| Sneaker       | 0.88          |
+| Bag           | 0.97          |
+| Ankle boot    | 0.93          |                                 
+
+| mAP           | 0.83          |
+Train Map score: 0.009911100902988008 
+Test Map score: 0.832199890168663
+
+from skimage.feature import hog
+hog_params={
+    'orientations':6,
+    'pixels_per_cell':(4,4) ,
+    'cells_per_block':(2,2),
+    'block_norm':'L2' ,
+}
+
+TP : 885
+FN : 153
+TP : 983
+FN : 11
+TP : 849
+FN : 131
+TP : 930
+FN : 89
+TP : 874
+FN : 160
+TP : 970
+FN : 19
+TP : 727
+FN : 208
+TP : 952
+FN : 56
+TP : 988
+FN : 11
+TP : 967
+FN : 37
+| Class         | AP            |
+|---------------|---------------|
+| T-shirt/top   | 0.72          |
+| Trouser       | 0.97          |
+| Pullover      | 0.74          |
+| Dress         | 0.83          |
+| Coat          | 0.71          |
+| Sandal        | 0.96          |
+| Shirt         | 0.61          |
+| Sneaker       | 0.89          |
+| Bag           | 0.98          |
+| Ankle boot    | 0.92          |
+| mAP           | 0.83          |
+Train Map score: 0.00990570912690084
+Test Map score: 0.832531872221902
