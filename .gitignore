@@ -2,3 +2,7 @@ mAP/
 fashionmnist/
 datasets/
 원본 데이터셋,파일/
+*.pyc
+Preprocessing/models/
+*.csv
+*.zip
